@@ -118,7 +118,7 @@
                d3.select("#price").text("$" + d.aprice);
                d3.select("#date").text(d.date);
                d3.select("#volumn").text(d.tradevolume);
-               d3.select("#imagename img").attr({src: "/vegetable_photo/" + d.productid.substring(0,2) + ".jpg"});
+               d3.select("#imagename img").attr({src: "vegetable_photo/" + d.productid.substring(0,2) + ".jpg"});
                //替換tooltip內容(選擇其id後,修改內容)
                d3.select("#tooltip").classed("hidden",false);
               }).on("mouseout",function(d){
@@ -178,7 +178,7 @@
                d3.select("#price").text("$" + d.aprice);
                 d3.select("#date").text(d.date);
                d3.select("#volumn").text(d.tradevolume);
-               d3.select("#imagename img").attr({src: "/vegetable_photo/" + d.productid.substring(0,2) + ".jpg"});
+               d3.select("#imagename img").attr({src: "vegetable_photo/" + d.productid.substring(0,2) + ".jpg"});
                //替換tooltip內容(選擇其id後,修改內容)
                d3.select("#tooltip").classed("hidden",false);
               }).on("mouseout",function(d){
@@ -316,7 +316,7 @@
       <p>日期:<span id="date">tooltip</span></p>
       <p>價格:<span id="price">tooltip</span></p>
       <p>交易量:<span id="volumn">tooltip</span></p>
-      <p id="imagename"><img src="/vegetable_photo/FA1.jpg" width="100"/></p>
+      <p id="imagename"><img src="vegetable_photo/FA1.jpg" width="100"/></p>
    </div>
    
 </body>
